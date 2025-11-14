@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FF9A7435-D825-4D16-91F3-32675C04A57E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>chestnut_cafe</RootNamespace>
+    <AssemblyName>chestnut cafe</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="booking.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="booking.Designer.cs">
+      <DependentUpon>booking.cs</DependentUpon>
+    </Compile>
+    <Compile Include="create account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="create account.Designer.cs">
+      <DependentUpon>create account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gallery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gallery.Designer.cs">
+      <DependentUpon>gallery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home menu.Designer.cs">
+      <DependentUpon>home menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="info.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="info.Designer.cs">
+      <DependentUpon>info.cs</DependentUpon>
+    </Compile>
+    <Compile Include="menus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="menus.Designer.cs">
+      <DependentUpon>menus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sign in.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sign in.Designer.cs">
+      <DependentUpon>sign in.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="booking.resx">
+      <DependentUpon>booking.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="create account.resx">
+      <DependentUpon>create account.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gallery.resx">
+      <DependentUpon>gallery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home menu.resx">
+      <DependentUpon>home menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="info.resx">
+      <DependentUpon>info.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="menus.resx">
+      <DependentUpon>menus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sign in.resx">
+      <DependentUpon>sign in.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chestnut cafe cup leaf white back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pngimg.com - square_PNG89.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CafeReconcile_Sept2022-342.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\f3376a06b92224efbe50167fb7cb61e4.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\o.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo0jpg %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo0jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo6jpg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Huddersfield-Pub.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1590674591358-intro-burger.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\the-marsh-cafe.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low-poly-grid-haikei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\low-poly-grid-haikei %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layered-peaks-haikei.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green cafe.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chestnut menu.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CIS-A2K_Instagram_Icon_%28Black%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\66a6c565347280bf42c7edc2333ecbe7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twitter-icon-circle-black-logo-png_seeklogo-287042.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Facebook_icon_%28black%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-Golden-Tips-to-Keep-Your-Restaurant-Staff-Happy-and-Motivated.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
